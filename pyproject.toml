@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radar-nowcasting"
+version = "1.0.0"
+description = "Short-term precipitation nowcasting from weather-radar reflectivity with a lightweight ConvLSTM (Alpine case study)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Niloufar Beikahmadi" }]
+keywords = ["nowcasting", "weather radar", "precipitation", "ConvLSTM", "deep learning", "meteorology"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "xarray>=2023.1",
+    "netCDF4>=1.6",
+    "scipy>=1.10",
+    "scikit-learn>=1.3",
+    "matplotlib>=3.9",
+    "tensorflow>=2.16",
+    "h5py>=3.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.4"]
+
+[project.urls]
+Repository = "https://github.com/Niloufarbeikahmadi/Alpine-Radar-Precipitation-Nowcasting-ConvLSTM"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning", "ignore::RuntimeWarning", "ignore::UserWarning"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+src = ["src", "scripts", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]

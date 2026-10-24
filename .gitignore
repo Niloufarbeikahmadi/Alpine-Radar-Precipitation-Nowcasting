@@ -1,0 +1,38 @@
+# --- Python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Environments ---------------------------------------------------------
+.venv/
+venv/
+env/
+.env
+
+# --- Editors / OS ---------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+
+# --- Project --------------------------------------------------------------
+# Raw radar data is not redistributed (see data/README.md)
+data/raw/*
+!data/raw/.gitkeep
+
+# Run-time logs
+logs/
+*.log
+
+# Demo runs on synthetic data
+demo_run/
