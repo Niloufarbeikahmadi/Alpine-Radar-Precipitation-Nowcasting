@@ -1,0 +1,59 @@
+{
+    "data_shape": [
+        50,
+        64,
+        64
+    ],
+    "time_range": {
+        "start": "2025-06-01T10:00:00.000000000",
+        "end": "2025-06-01T14:05:00.000000000",
+        "n_timesteps": 50
+    },
+    "spatial_extent": {
+        "x_range": [
+            0.0,
+            63.0
+        ],
+        "y_range": [
+            0.0,
+            63.0
+        ]
+    },
+    "reflectivity_stats": {
+        "min": 0.052221931517124176,
+        "max": 1.0,
+        "mean": 0.11554119735956192,
+        "std": 0.1310371607542038,
+        "is_scaled": true,
+        "scale_min": 0.052221931517124176,
+        "scale_max": 1.0
+    },
+    "rainfall_stats": {
+        "min": 0.0,
+        "max": 205.04833984375,
+        "mean": 0.9738094210624695,
+        "std": 9.872897148132324
+    },
+    "storm_cells_detected": {
+        "moderate_rain": {
+            "threshold_mm_h": 2.5,
+            "pixel_count": 5345,
+            "percentage": 2.60986328125
+        },
+        "heavy_rain": {
+            "threshold_mm_h": 7.5,
+            "pixel_count": 3594,
+            "percentage": 1.7548828125
+        },
+        "violent_rain": {
+            "threshold_mm_h": 25.0,
+            "pixel_count": 2010,
+            "percentage": 0.9814453125000001
+        },
+        "extreme_rain": {
+            "threshold_mm_h": 50.0,
+            "pixel_count": 1190,
+            "percentage": 0.5810546875
+        }
+    }
+}

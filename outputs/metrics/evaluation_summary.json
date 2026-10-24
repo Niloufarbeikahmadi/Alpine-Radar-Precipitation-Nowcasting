@@ -1,0 +1,33 @@
+{
+    "Overall Performance": {
+        "Persistence": {
+            "RMSE (mm/h)": 4.347720081446851,
+            "MAE (mm/h)": 0.43053239583969116,
+            "Bias (mm/h)": 0.0836135521531105,
+            "Correlation": 0.8297138582742885
+        },
+        "ConvLSTM": {
+            "RMSE (mm/h)": 3.078410333876207,
+            "MAE (mm/h)": 0.21108795702457428,
+            "Bias (mm/h)": -0.15734335780143738,
+            "Correlation": 0.9562052703477966
+        }
+    },
+    "Heavy Rainfall Detection (>7.5 mm/h)": {
+        "Persistence": {
+            "CSI": 0.6592865928655232,
+            "POD": 0.8152091254746653,
+            "FAR": 0.22487346348501455
+        },
+        "ConvLSTM": {
+            "CSI": 0.9111434814268673,
+            "POD": 0.951330798478364,
+            "FAR": 0.04430863254389281
+        }
+    },
+    "Improvements": {
+        "RMSE_improvement_%": 29.194836001222924,
+        "MAE_improvement_%": 50.97048234596196,
+        "CSI_improvement_%": 38.201427255582296
+    }
+}

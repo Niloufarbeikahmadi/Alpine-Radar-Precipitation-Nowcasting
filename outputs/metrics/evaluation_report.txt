@@ -1,0 +1,25 @@
+======================================================================
+PRECIPITATION NOWCASTING EVALUATION REPORT
+======================================================================
+
+OVERALL PERFORMANCE METRICS
+----------------------------------------
+
+Persistence Baseline:
+  RMSE: 4.3477 mm/h
+  MAE:  0.4305 mm/h
+  Bias: +0.0836 mm/h
+  Correlation: 0.8297
+
+ConvLSTM Model:
+  RMSE: 3.0784 mm/h
+  MAE:  0.2111 mm/h
+  Bias: -0.1573 mm/h
+  Correlation: 0.9562
+
+IMPROVEMENTS:
+  RMSE Improvement: 29.19%
+  MAE Improvement:  50.97%
+  CSI Improvement:  38.20%
+
+======================================================================
